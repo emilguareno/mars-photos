@@ -10,7 +10,7 @@ function imageOfTheDayController(imageOfTheDayService){
         this.roverInfo = {
             name: imageObject.rover.name,
             camera: imageObject.camera.name,
-            date: imageObject.earth_date
+            date: moment(imageObject.earth_date).format('MMMM DD, YYYY')
         }
     }.bind(this));
 }
