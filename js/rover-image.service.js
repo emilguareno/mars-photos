@@ -2,7 +2,7 @@ angular.module('marsApp').factory('roverImageService',['$http', '$q', roverImage
 
 function roverImageService($http, $q){
     var apiKey = 'aZlmHCp3jD9sanwE8KvytidYArlTvlhwr3fEhYyM';
-    var date = '2017-01-22';
+    var date = '2017-01-23';
     var service = {
         getCuriosityImages: getCuriosityImages,
         getOpportunityImages: getOpportunityImages

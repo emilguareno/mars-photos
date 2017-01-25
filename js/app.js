@@ -9,7 +9,7 @@ angular.module('marsApp', [
   {
     name: 'imageGallery',
     url: '/image-gallery',
-    template: '<h3>Its the UI-Router hello world app!</h3>'
+    component: 'imageGallery'
   }]
   $urlRouterProvider.otherwise('/');
   states.forEach(function(state) {

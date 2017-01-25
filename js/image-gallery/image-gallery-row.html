@@ -1,0 +1,12 @@
+<header ng-if="$ctrl.imageData.length > 1">
+    <h3>{{$ctrl.imageData[$ctrl.cameraIndex].rover}}: {{$ctrl.imageData[$ctrl.cameraIndex].camera}} Camera</h3>
+    <select ng-model="$ctrl.cameraIndex">
+      <option ng-repeat="obj in $ctrl.imageData" ng-selected="{{$index === 0}}" value="{{$index}}">{{obj.camera}}</option>
+    </select>
+</header>
+<div class="images">
+    <div class="image-wrapper" ng-repeat="image in $ctrl.imageData[$ctrl.cameraIndex].photos">
+        <img ng-src={{image.img_src}} />
+        <p>{{$ctrl.getFormattedDate(image.earth_date)}}</p>
+    </div>
+</div>

@@ -38,3 +38,32 @@
     flex-direction: column;
     align-items: flex-end;
 }
+#wrapper .image-gallery{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+#wrapper .image-gallery header {
+    display: flex;
+    justify-content: space-between;
+}
+#wrapper .image-gallery h3{
+    text-transform: capitalize;
+}
+#wrapper .image-gallery .images{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+#wrapper .image-gallery .images .image-wrapper{
+    flex-basis: 162px;
+    padding: 0 20px;
+}
+#wrapper .image-gallery .images .image-wrapper p{
+    text-align: right;
+}
+#wrapper .image-gallery .images img{
+    max-width: 100%;
+    height: auto;
+}
