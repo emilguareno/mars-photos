@@ -16,6 +16,6 @@ function roverImageService($http, $q){
         return getImages('opportunity');
     }
     function getImages(rover){
-        return $http.get('https://api.nasa.gov/mars-photos/api/v1/rovers/'+ rover +'/photos?earth_date='+ date +'&api_key='+apiKey);
+        return $http.get('https://api.nasa.gov/mars-photos/api/v1/rovers/'+ rover +'/photos?earth_date='+ date +'&api_key='+apiKey, {cache: 'true'});
     }
 }

@@ -5,7 +5,6 @@ angular.module('marsApp').component('dailyImage', {
 
 function imageOfTheDayController(imageOfTheDayService){
     imageOfTheDayService.getRandomImage().then(function(imageObject){
-        console.log(imageObject);
         this.imageSrc = imageObject.img_src;
         this.roverInfo = {
             name: imageObject.rover.name,
