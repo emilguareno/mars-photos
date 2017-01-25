@@ -1,8 +1,8 @@
 <h2>Image of the Day</h2>
 <div class="image-of-the-day">
-    <img ng-src={{imageSrc}} alt="">
+    <img ng-src={{$ctrl.imageSrc}} alt="">
     <div class="rover-info">
-        <span>{{roverInfo.name}}</span>
-        <span>{{roverInfo.date}}</span>
+        <span>{{$ctrl.roverInfo.name}} {{$ctrl.roverInfo.camera}}</span>
+        <span>{{$ctrl.roverInfo.date}}</span>
     </div>
 </div>
