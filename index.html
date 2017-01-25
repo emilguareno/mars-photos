@@ -1,0 +1,32 @@
+<!DOCTYPE HTML >
+<html ng-app="marsApp">
+<head>
+	<title>Mars Photos</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+<body>
+	<div id="wrapper">
+		<nav>
+			<h1>The Red Planet Rovers</h1>
+			<ul>
+				<li>
+					<a ui-sref="imageOfTheDay"><span>Image of the Day</span></a>
+				</li>
+				<li>
+					<a ui-sref="imageGallery"><span>Image Gallery</span></a>
+				</li>
+			</ul>
+		</nav>
+		<ui-view></ui-view>
+	</div>
+	<script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+	<script type="text/javascript" src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script type="text/javascript" src="node_modules/moment/min/moment.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/rover-image.service.js"></script>
+	<script type="text/javascript" src="js/image-of-the-day/image-of-the-day.component.js"></script>
+	<script type="text/javascript" src="js/image-of-the-day/image-of-the-day.service.js"></script>
+</body>
+</html>

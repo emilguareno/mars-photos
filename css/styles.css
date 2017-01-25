@@ -1,0 +1,31 @@
+#wrapper{
+    max-width: 900px;
+    margin: 0 auto;
+}
+#wrapper nav{
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid black 1px;
+}
+#wrapper nav h1{
+    margin-right: auto;
+}
+#wrapper nav ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+#wrapper nav ul li{
+    background: lightgrey;
+    border: solid black 1px;
+    align-items: center;
+}
+#wrapper nav ul li a{
+    padding: 0 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
